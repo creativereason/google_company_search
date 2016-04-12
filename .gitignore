@@ -12,7 +12,6 @@
 *.o
 *.a
 mkmf.log
-=======
 *.gem
 *.rbc
 /.config
