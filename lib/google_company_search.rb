@@ -30,7 +30,7 @@ class GoogleCompanySearch
   end
 
   private 
-  def is_valid_link(link)
+  def self.is_valid_link(link)
     blacklist = ["wikipedia.org", "manta.com", "hoovers.com", "google.com", "techcrunch.com", "bbb.org", "bloomberg.com", "yellowpages.org", "yp.com", "yellowpages.com", "fda.gov", "yelp.com", "findlaw.com", "cnbc.com", "urbandictionary.com", "webcache.googleusercontent.com", "linkedin.com", "twitter.com", "facebook.com", "yellowpagesgoesgreen.com", "mapquest.com", "whereorg.com", "macraesbluebook.com", "bizjournals.com", "amfibi.directory"]
     return false if link.match(/^(http|https):\/\//) == nil
     uri = URI(link)   
